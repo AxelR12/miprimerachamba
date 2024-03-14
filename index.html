@@ -1,1 +1,28 @@
-HOLI SOY TU PROFE FAVORITO
+<html>
+    <title>Clase 01</title>
+    <body>
+
+    </body>
+    <script>
+
+        // Array de triángulos
+    const triangulos = [
+        {base: 5, altura: 8},
+        {base: 3, altura: 6},
+        {base: 7, altura: 10},
+        {base: 4, altura: 9},
+        {base: 6, altura: 12}
+    ];
+
+    // Función para calcular el área de un triángulo
+    function calcularArea(base, altura) {
+        return (base * altura) / 2;
+    }
+
+    // Imprimir las áreas de los triángulos
+    triangulos.forEach((triangulo, indice) => {
+        const area = calcularArea(triangulo.base, triangulo.altura);
+        console.log("El área del triángulo " + (indice + 1) + " es: " + area);
+    });
+    </script>
+</html>
